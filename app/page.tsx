@@ -10,7 +10,7 @@ import ClientsSection from "./components/ClientsSection";
 import GallerySection from "./components/GallerySection";
 import ReviewsSection from "./components/ReviewsSection";
 import ContactSection from "./components/ContactSection";
-
+ 
 export default function Home() {
   return (
     <div className="font-sans bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100 min-h-screen flex flex-col scroll-smooth">
@@ -37,7 +37,7 @@ export default function Home() {
       <section id="gallery"><GallerySection /></section>
 
       {/* Reviews: Ratings and badges */}
-      <section id="reviews"><ReviewsSection /></section>
+      {/* <section id="reviews"><ReviewsSection /></section> */}
 
       {/* Contact: Phone, address, contact form, social links */}
       <section id="contact"><ContactSection /></section>

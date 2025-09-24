@@ -13,11 +13,10 @@ import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 
 const images = [
-  "/floors/hardwood-light.jpg",
-  "/floors/hardwood-herringbone.jpg",
-  "/floors/hardwood-natural.jpg",
-  "/floors/hardwood-dark.jpg",
-  "/floors/hardwood-pattern.jpg"
+  "/hero/1.jpg",
+  "/hero/2.jpg",
+  "/hero/3.jpg",
+  "/hero/4.jpg",
 ];
 
 export default function HeroSection() {
@@ -31,31 +30,31 @@ export default function HeroSection() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="w-full flex flex-col items-center justify-center z-10"
       >
-        <div className="max-w-6xl mx-auto px-4 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Transform Your NYC Property with Beautiful Hardwood Floors
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
+            Transform Your Floors with Next Phaze Finish
           </h1>
-          <div className="space-y-4 mb-8">
-            <p className="text-2xl md:text-3xl font-semibold">
-              4th Generation Flooring Company
+          <div className="space-y-2 sm:space-y-4 mb-6 sm:mb-8">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
+              Beautiful, Lasting Works of Craftsmanship
             </p>
-            <p className="text-xl md:text-2xl">
-              Solid Hardwood, Engineered, Laminate, and Luxury Vinyl Flooring
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl">
+              Hardwood • Laminate • Luxury Vinyl • Custom Finishes
             </p>
-            <p className="text-lg italic">
-              Refinisher | Installer | Repairer (it's a word)
+            <p className="text-sm sm:text-base md:text-lg italic">
+              Installation | Refinishing | Repairs & Touch-ups
             </p>
           </div>
-          <Button size="lg" className="bg-[#CD9B6A] hover:bg-[#B88756] text-white text-lg py-6 px-8 rounded-none">
-            Contact Us
+          <Button size="lg" className="bg-[#CD9B6A] hover:bg-[#B88756] text-white text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-8 rounded-none w-full sm:w-auto">
+            Get Free Consultation
           </Button>
-          <p className="mt-8 text-lg">
-            Serving: Manhattan, Brooklyn, Queens, Staten Island and the entire New York City metro area.
+          <p className="mt-6 sm:mt-8 text-sm sm:text-base lg:text-lg px-2 sm:px-0">
+            Quality workmanship that stands the test of time • Transparent pricing • Personalized service
           </p>
         </div>
         {/* Carousel under the header content */}
-        <div className="w-full flex justify-center mt-12">
-          <div className="w-full max-w-3xl">
+        <div className="w-full flex justify-center mt-8 sm:mt-12 px-4">
+          <div className="w-full max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl">
             <Carousel
               className="w-full"
               plugins={[plugin]}
@@ -67,7 +66,7 @@ export default function HeroSection() {
               <CarouselContent>
                 {images.map((src, index) => (
                   <CarouselItem key={src} className="flex items-center justify-center">
-                    <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden">
+                    <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 rounded-lg sm:rounded-xl overflow-hidden">
                       <Image
                         src={src}
                         alt="Beautiful hardwood flooring"
@@ -75,13 +74,13 @@ export default function HeroSection() {
                         priority={index === 0}
                         className="object-cover"
                       />
-                      <div className="absolute inset-0 bg-black/60" />
+                      <div className="absolute inset-0 bg-black/20" />
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-2" />
-              <CarouselNext className="right-2" />
+              <CarouselPrevious className="left-1 sm:left-2" />
+              <CarouselNext className="right-1 sm:right-2" />
             </Carousel>
           </div>
         </div>
