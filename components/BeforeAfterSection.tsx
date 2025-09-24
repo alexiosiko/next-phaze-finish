@@ -14,8 +14,22 @@ export default function BeforeAfterSection() {
     >
       <h2 className="text-2xl font-semibold mb-4">Transform Your Floors with Us</h2>
       <div className="flex flex-col sm:flex-row gap-4">
-        <Image src="/before-placeholder.jpg" alt="Before" width={320} height={240} className="rounded shadow" />
-        <Image src="/after-placeholder.jpg" alt="After" width={320} height={240} className="rounded shadow" />
+        <Image 
+          src="/before-placeholder.jpg" 
+          alt="Before" 
+          width={320} 
+          height={240} 
+          className="rounded shadow"
+          style={{ width: "auto", height: "auto" }}
+        />
+        <Image 
+          src="/after-placeholder.jpg" 
+          alt="After" 
+          width={320} 
+          height={240} 
+          className="rounded shadow"
+          style={{ width: "auto", height: "auto" }}
+        />
       </div>
       <Button className="mt-4">Contact Us</Button>
     </motion.section>

@@ -14,7 +14,11 @@ export const metadata: Metadata = {
   description: "Transform your floors with Next Phaze Finish. Expert hardwood, laminate, and luxury vinyl installation, repairs, and custom finishes. Quality workmanship that stands the test of time.",
   keywords: "flooring, hardwood floors, laminate installation, luxury vinyl, floor refinishing, floor repairs, custom finishes",
   authors: [{ name: "Next Phaze Finish" }],
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

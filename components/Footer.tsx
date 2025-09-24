@@ -23,7 +23,7 @@ export default function Footer() {
           <a href="#" className="hover:text-[#CD9B6A] transition-colors">Facebook</a>
           <a href="#" className="hover:text-[#CD9B6A] transition-colors">Instagram</a>
           <a href="#" className="hover:text-[#CD9B6A] transition-colors">Yelp</a>
-          <a href="#" className="hover:text-[#CD9B6A] transition-colors">Google Reviews</a>
+          {/* <a href="#" className="hover:text-[#CD9B6A] transition-colors">Google Reviews</a> */}
         </div>
         
         <div className="border-t border-neutral-700 pt-4">
