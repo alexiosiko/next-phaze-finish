@@ -45,8 +45,19 @@ export default function HeroSection() {
               Installation | Refinishing | Repairs & Touch-ups
             </p>
           </div>
-          <Button size="lg" className="bg-[#CD9B6A] hover:bg-[#B88756] text-white text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-8 rounded-none w-full sm:w-auto">
-            Get Free Consultation
+          <Button 
+            size="lg" 
+            className="bg-[#CD9B6A] hover:bg-[#B88756] text-white text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-8 rounded-none w-full sm:w-auto"
+            onClick={() => {
+              const contactSection = document.getElementById('contact');
+              if (contactSection) {
+                const yOffset = -80; // Account for sticky nav height
+                const y = contactSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }
+            }}
+          >
+            Contact Us
           </Button>
           <p className="mt-6 sm:mt-8 text-sm sm:text-base lg:text-lg px-2 sm:px-0">
             Quality workmanship that stands the test of time • Transparent pricing • Personalized service

@@ -9,7 +9,6 @@ const navLinks = [
   { label: "Process", id: "process" },
   { label: "Clients", id: "clients" },
   { label: "Gallery", id: "gallery" },
-  { label: "Reviews", id: "reviews" },
   { label: "Contact", id: "contact" },
 ];
 
@@ -42,7 +41,9 @@ export default function Nav() {
               e.preventDefault();
               const el = document.getElementById(link.id);
               if (el) {
-                el.scrollIntoView({ behavior: "smooth" });
+                const yOffset = -80; // Account for sticky nav height
+                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
               }
             }}
             className={`transition-colors px-2 sm:px-3 py-1 sm:py-2 rounded text-sm sm:text-base whitespace-nowrap hover:bg-neutral-800 focus:bg-neutral-800 focus:outline-none ${active === link.id ? "bg-neutral-700 text-[#CD9B6A]" : ""}`}
