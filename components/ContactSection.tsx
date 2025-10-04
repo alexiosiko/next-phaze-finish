@@ -18,11 +18,7 @@ export default function ContactSection() {
 
     try {
       // Debug: Log the EmailJS configuration
-      console.log('EmailJS Config:', {
-        serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      });
+      
 
       const result = await emailjs.sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID',
