@@ -59,7 +59,7 @@ export default function ContactSection() {
                 <div className="border-t border-neutral-200 dark:border-neutral-700 pt-3">
                   <p className="text-neutral-600 dark:text-neutral-400 mb-1">Or email us:</p>
                   <a href="mailto:artyom1025@gmail.com" className="text-lg text-[#CD9B6A] hover:underline">
-                    artyom1025@gmail.com
+                    nextphazefinish@gmail.com
                   </a>
                 </div>
               </div>
