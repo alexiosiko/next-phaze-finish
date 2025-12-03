@@ -14,8 +14,8 @@ export default function Footer() {
             📞 (236) 869-7404
           </a>
           <span className="hidden sm:inline text-neutral-400">|</span>
-          <a href="mailto:artyom1025@gmail.com" className="text-[#CD9B6A] hover:underline">
-            ✉️ artyom1025@gmail.com
+          <a href="mailto:nextphazefinish@gmail.com" className="text-[#CD9B6A] hover:underline">
+            ✉️ nextphazefinish@gmail.com
           </a>
         </div>
         
