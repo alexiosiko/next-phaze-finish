@@ -61,7 +61,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="w-full bg-neutral-900 text-neutral-100 sticky top-0 z-50 shadow">
+    <nav className="w-full bg-[color:var(--surface)]/95 text-[color:var(--foreground)] sticky top-0 z-50 shadow-sm border-b border-[color:var(--border)] backdrop-blur-sm">
       {/* Desktop Navigation */}
       <div className="hidden md:flex justify-center py-4">
         <div className="flex gap-6 px-4">
@@ -69,7 +69,7 @@ export default function Nav() {
             <button
               key={link.id}
               onClick={() => handleDesktopNavClick(link.id)}
-              className={`transition-colors px-3 py-2 rounded text-base hover:bg-neutral-800 focus:bg-neutral-800 focus:outline-none ${active === link.id ? "bg-neutral-700 text-[#CD9B6A]" : ""}`}
+              className={`transition-colors px-3 py-2 rounded text-base hover:bg-[color:var(--muted)] focus:bg-[color:var(--muted)] focus:outline-none ${active === link.id ? "bg-[color:var(--muted)] text-[color:var(--accent)]" : ""}`}
             >
               {link.label}
             </button>
@@ -79,15 +79,15 @@ export default function Nav() {
 
       {/* Mobile Navigation */}
       <div className="md:hidden flex items-center justify-between px-4 py-3">
-        <div className="text-xl font-bold text-[#CD9B6A]">Next Phaze Finish</div>
+        <div className="text-xl font-bold text-[color:var(--accent)]">Next Phaze Finish</div>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
-            <button className="p-2 hover:bg-neutral-800 rounded-md transition-colors">
+            <button className="p-2 hover:bg-[color:var(--muted)] rounded-md transition-colors">
               <Menu className="h-6 w-6" />
             </button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-80 bg-neutral-900 border-neutral-700">
-            <SheetTitle className="text-2xl font-bold text-[#CD9B6A] mb-6">Navigation</SheetTitle>
+          <SheetContent side="right" className="w-80 bg-[color:var(--surface)] border-[color:var(--border)]">
+            <SheetTitle className="text-2xl font-bold text-[color:var(--accent)] mb-6">Navigation</SheetTitle>
             <SheetDescription className="sr-only">
               Navigate to different sections of the Next Phaze Finish website
             </SheetDescription>
@@ -96,7 +96,7 @@ export default function Nav() {
                 <button
                   key={link.id}
                   onClick={() => handleMobileNavClick(link.id)}
-                  className={`w-full text-left text-lg py-3 px-4 rounded-lg transition-colors hover:bg-neutral-800 focus:bg-neutral-800 focus:outline-none ${active === link.id ? "bg-neutral-700 text-[#CD9B6A]" : "text-neutral-100"}`}
+                  className={`w-full text-left text-lg py-3 px-4 rounded-lg transition-colors hover:bg-[color:var(--muted)] focus:bg-[color:var(--muted)] focus:outline-none ${active === link.id ? "bg-[color:var(--muted)] text-[color:var(--accent)]" : "text-[color:var(--foreground)]"}`}
                 >
                   {link.label}
                 </button>

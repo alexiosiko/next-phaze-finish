@@ -1,14 +1,14 @@
-import Nav from "../../components/Nav";
-import Footer from "../../components/Footer";
-import HeroSection from "../../components/HeroSection";
-import AboutSection from "../../components/AboutSection";
-import BeforeAfterSection from "../../components/BeforeAfterSection";
-import ServicesSection from "../../components/ServicesSection";
-import ProcessSection from "../../components/ProcessSection";
-import ClientsSection from "../../components/ClientsSection";
-import GallerySection from "../../components/GallerySection";
-import ReviewsSection from "../../components/ReviewsSection";
-import ContactSection from "../../components/ContactSection";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
+import AboutSection from "../components/AboutSection";
+import BeforeAfterSection from "../components/BeforeAfterSection";
+import ServicesSection from "../components/ServicesSection";
+import ProcessSection from "../components/ProcessSection";
+import ClientsSection from "../components/ClientsSection";
+import GallerySection from "../components/GallerySection";
+import ReviewsSection from "../components/ReviewsSection";
+import ContactSection from "../components/ContactSection";
  
 export default function Home() {
   return (
@@ -33,7 +33,7 @@ export default function Home() {
       <section id="clients"><ClientsSection /></section>
 
       {/* Gallery: Project and team photos */}
-      <section id="gallery"><GallerySection /></section>
+      {/* <section id="gallery"><GallerySection /></section> */}
 
       {/* Reviews: Ratings and badges */}
       {/* <section id="reviews"><ReviewsSection /></section> */}

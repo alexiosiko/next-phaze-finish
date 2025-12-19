@@ -19,13 +19,13 @@ export default function GallerySection() {
 
   return (
     <motion.section
-      className="w-full flex flex-col items-center py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-neutral-50 dark:bg-neutral-900"
+      className="w-full flex flex-col items-center py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-[color:var(--background)] text-[color:var(--foreground)]"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
     >
-      <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">Next Phaze Gallery</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 section-title">Our Work — Before & After</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 w-full max-w-6xl">
         {galleryImages.map((image, index) => (
           <div key={index} className="aspect-[4/3] w-full max-w-sm mx-auto relative">
@@ -42,8 +42,8 @@ export default function GallerySection() {
             ) : (
               <div className="w-full h-full bg-neutral-200 dark:bg-neutral-800 rounded-lg flex items-center justify-center">
                 <div className="text-center p-4">
-                  <div className="w-12 h-12 mx-auto mb-2 bg-[#CD9B6A] rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">NPF</span>
+                  <div className="w-12 h-12 mx-auto mb-2 bg-[color:var(--accent)] rounded-full flex items-center justify-center">
+                    <span className="text-[color:var(--accent-foreground)] font-bold">NPF</span>
                   </div>
                   <p className="text-sm text-neutral-600 dark:text-neutral-400">
                     {image.alt}
