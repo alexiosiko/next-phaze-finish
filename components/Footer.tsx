@@ -19,11 +19,11 @@ export default function Footer() {
         </div>
         
 		
-        <div className="flex justify-center gap-6 mb-6">
+        {/* <div className="flex justify-center gap-6 mb-6">
           <a href="#" className="text-neutral-500 hover:text-[color:var(--accent)] transition-colors">Facebook</a>
           <a href="#" className="text-neutral-500 hover:text-[color:var(--accent)] transition-colors">Instagram</a>
           <a href="#" className="text-neutral-500 hover:text-[color:var(--accent)] transition-colors">Yelp</a>
-        </div>
+        </div> */}
         
         <div className="border-t border-neutral-700 pt-4">
           <p className="text-sm text-neutral-400">

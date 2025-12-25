@@ -60,7 +60,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="w-full bg-[color:var(--surface)]/95 text-[color:var(--foreground)] sticky top-0 z-50 shadow-sm border-b border-[color:var(--border)] backdrop-blur-sm">
+    <nav className="w-full  text-[color:var(--foreground)] sticky top-0 z-50 shadow-sm border-b border-[color:var(--border)] backdrop-blur-sm">
       {/* Desktop Navigation */}
       <div className="hidden md:flex justify-center py-4">
         <div className="flex gap-6 px-4">

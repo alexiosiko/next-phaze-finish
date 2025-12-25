@@ -47,11 +47,11 @@ export default function ContactSection() {
           {/* Contact Info */}
           <div className="space-y-6">
             <div className="bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-[color:var(--accent)]">📞 Contact Us Today</h3>
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4">📞 Contact Us Today</h3>
               <div className="space-y-3 text-base sm:text-lg">
                 <div>
                   <p className="text-neutral-600 dark:text-neutral-400 mb-1">Call us directly:</p>
-                  <a href="tel:2368697404" className="text-2xl font-bold text-[color:var(--accent)] hover:underline block">
+                  <a href="tel:2368697404" className="text-2xl font-bold  hover:underline block">
                     (236) 869-7404
                   </a>
                 </div>
